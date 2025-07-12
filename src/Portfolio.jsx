@@ -1,12 +1,21 @@
 import React from "react";
+import pic from './assets/profile.jpg'
 
 const Portfolio = () => {
+  const images = [
+    pic,
+    pic,
+    pic,
+    pic,
+    pic,
+    pic,
+  ]
   return (
     <div className="font-sans text-gray-900">
       {/* Navbar */}
       <header className="bg-white shadow-md sticky top-0 z-50">
         <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-xl font-bold">YourName</div>
+          <div className="text-xl font-bold">NM</div>
           <ul className="flex space-x-6 text-sm font-medium">
             <li><a href="#intro" className="hover:text-blue-500">Home</a></li>
             <li><a href="#about" className="hover:text-blue-500">About</a></li>
@@ -16,16 +25,18 @@ const Portfolio = () => {
       </header>
 
       {/* Intro Section */}
-      <section id="intro" className="h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-blue-50 to-white">
+      <section id="intro" className="h-[90vh] flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-blue-50 to-white">
+        <img src={pic} alt="Profile" className="w-64 h-64 rounded-full object-cover mb-10"/>
         <h1 className="text-5xl font-extrabold mb-4">Hi, I’m Nathaniel</h1>
-        <p className="text-lg text-gray-600 max-w-xl">A software developer passionate about creating for others.</p>
+        <p className="text-lg text-gray-600 max-w-xl">I'm searching for problems to solve.</p>
       </section>
 
       {/* About Section */}
       <section id="about" className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">About Me</h2>
-          <p className="text-gray-700 text-lg">I specialize in frontend development using React and Tailwind CSS. I enjoy solving real problems and creating interfaces that feel intuitive and smooth.</p>
+          <p className="text-gray-700 text-lg">I enjoy coding the most when I'm building solutions for others. 
+            I want to work on projects that solve real problems, no matter how big or small.</p>
         </div>
       </section>
 
@@ -36,17 +47,34 @@ const Portfolio = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {/* Project 1 */}
             <div className="bg-white shadow-lg rounded-2xl p-6 transition hover:shadow-xl">
-              <h3 className="text-xl font-semibold mb-2">Project One</h3>
-              <p className="text-gray-600 mb-4">A short description about what this project does and what tech stack it uses.</p>
-              <a href="#" className="text-blue-600 hover:underline">View Project →</a>
+              <h3 className="text-xl font-semibold mb-2">Clearer</h3>
+              <p className="text-gray-600 mb-4">An assistive reading tool for children with Auditory Processing Disorder built in Android.</p>
+              <a href="https://github.com/MastracciN/Clearer" className="text-blue-600 hover:underline">View Project →</a>
             </div>
 
             {/* Project 2 */}
             <div className="bg-white shadow-lg rounded-2xl p-6 transition hover:shadow-xl">
-              <h3 className="text-xl font-semibold mb-2">Project Two</h3>
-              <p className="text-gray-600 mb-4">Another project focused on performance, accessibility, or unique design challenges.</p>
+              <h3 className="text-xl font-semibold mb-2">Collectors</h3>
+              <p className="text-gray-600 mb-4">A tool I built to manage my family's collection of toy cars.</p>
               <a href="#" className="text-blue-600 hover:underline">View Project →</a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section id="skills" className="py-20 px-6 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-10">Skills</h2>
+          <div className="grid grid-cols-3 gap-4 p-4">
+            {images.map((src, index) => (
+              <img
+                key={index}
+                src={src}
+                alt={`Image ${index + 1}`}
+                className="w-full h-40 object-cover rounded-md"
+              />
+            ))}
           </div>
         </div>
       </section>
@@ -75,7 +103,7 @@ const Portfolio = () => {
 
       {/* Footer */}
       <footer className="py-6 bg-white border-t text-center text-sm text-gray-500">
-        © 2025 Your Name. All rights reserved.
+        {/* © 2025 Your Name. All rights reserved. */}
       </footer>
     </div>
   );
