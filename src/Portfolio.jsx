@@ -56,6 +56,7 @@ const Portfolio = () => {
             <li><a href="#intro" className="hover:text-blue-500">Home</a></li>
             <li><a href="#about" className="hover:text-blue-500">About</a></li>
             <li><a href="#projects" className="hover:text-blue-500">Projects</a></li>
+            <li><a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">Resume</a></li>
           </ul>
         </nav>
       </header>
@@ -91,7 +92,7 @@ const Portfolio = () => {
             {/* Project 2 */}
             <div className="bg-white shadow-lg rounded-2xl p-6 transition hover:shadow-xl">
               <h3 className="text-xl font-semibold mb-2">Collectors</h3>
-              <p className="text-gray-600 mb-4">A tool I built to manage my family's collection of toy cars.</p>
+              <p className="text-gray-600 mb-4">A tool to manage collections using UPCs (barcodes).</p>
               <a href="#" className="text-blue-600 hover:underline">View Project →</a>
             </div>
           </div>
