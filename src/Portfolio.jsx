@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./components/Header.jsx"
 import pic from './assets/profile.jpg'
 
 const Portfolio = () => {
@@ -47,22 +48,12 @@ const Portfolio = () => {
   ]
 
   return (
-    <div className="font-sans text-gray-900">
+    <div className="font-sans text-gray-900 bg-highlight">
       {/* Navbar */}
-      <header className="bg-white shadow-md sticky top-0 z-50">
-        <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-xl font-bold">NM</div>
-          <ul className="flex space-x-6 text-sm font-medium">
-            <li><a href="#intro" className="hover:text-blue-500">Home</a></li>
-            <li><a href="#about" className="hover:text-blue-500">About</a></li>
-            <li><a href="#projects" className="hover:text-blue-500">Projects</a></li>
-            <li><a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">Resume</a></li>
-          </ul>
-        </nav>
-      </header>
+      <Header />
 
       {/* Intro Section */}
-      <section id="intro" className="h-[90vh] flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-blue-50 to-white">
+      <section id="intro" className="h-[90vh] flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-blue-100 to-white">
         <img src={pic} alt="Profile" className="w-64 h-64 rounded-full object-cover mb-10"/>
         <h1 className="text-5xl font-extrabold mb-4">Hi, I’m Nathaniel</h1>
         <p className="text-lg text-gray-600 max-w-xl">I'm searching for problems to solve.</p>
