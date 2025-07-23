@@ -15,7 +15,7 @@ const Header = () => {
            scrolled ? "bg-transparent" : "bg-transparent"
       }`}>
             {/* <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-center items-center"> */}
-              <nav className={`inline-flex px-8 py-4 bg-white rounded-xl shadow-md items-center space-x-10`}>
+              <nav className={`inline-flex px-8 py-4 bg-white rounded-xl items-center shadow-md space-x-10`}>
                 {/* <div className="text-xl font-bold">NM</div> */}
                 <ul className="flex space-x-6 text-md font-semibold">
                     <li><a href="#intro" className="hover:text-blue-500 py-4">Home</a></li>

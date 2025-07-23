@@ -48,16 +48,18 @@ const Portfolio = () => {
   ]
 
   return (
-    <div className="font-sans text-gray-900 bg-highlight">
+    <div className="font-sans text-gray-900">
       {/* Navbar */}
-      <Header />
+      <div className='bg-gradient-to-b from-blue-100 to-white'>
+        <Header />
 
-      {/* Intro Section */}
-      <section id="intro" className="h-[90vh] flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-blue-100 to-white">
-        <img src={pic} alt="Profile" className="w-64 h-64 rounded-full object-cover mb-10"/>
-        <h1 className="text-5xl font-extrabold mb-4">Hi, I’m Nathaniel</h1>
-        <p className="text-lg text-gray-600 max-w-xl">I'm searching for problems to solve.</p>
-      </section>
+        {/* Intro Section */}
+        <section id="intro" className="h-[90vh] flex flex-col justify-center items-center text-center px-6">
+          <img src={pic} alt="Profile" className="w-64 h-64 rounded-full object-cover mb-10"/>
+          <h1 className="text-5xl font-extrabold mb-4">Hi, I’m Nathaniel</h1>
+          <p className="text-lg text-gray-600 max-w-xl">I'm searching for problems to solve.</p>
+        </section>
+      </div>
 
       {/* About Section */}
       <section id="about" className="py-20 px-6 bg-white">
