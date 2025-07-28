@@ -24,15 +24,21 @@ const Portfolio = () => {
 
       {/* About Section */}
       <section id="about" className="px-6 mb-7">
-        <h2 className="text-2xl mb-1">About</h2>
+        <h2 className="text-2xl mb-3">About</h2>
         <p className="text-gray-400">I enjoy coding the most when I'm building solutions for others. 
             I want to work on projects that solve real problems, no matter how big or small.</p>
       </section>
 
-      {/* TODO: projects centered, image on left, desc. on right */}
+      {/* Work Experience Section */}
+      <section id="workexperience" className="px-6 mb-7">
+        <h2 className="text-2xl mb-3">Work Experience</h2>
+        <p className="text-gray-400">I enjoy coding the most when I'm building solutions for others. 
+            I want to work on projects that solve real problems, no matter how big or small.</p>
+      </section>
+
       {/* Projects Section */}
       <section id="projects" className="px-6 mb-7">
-          <h2 className="text-2xl mb-4">Projects</h2>
+          <h2 className="text-2xl mb-3">Projects</h2>
           {/* Project 1 */}
           <div className="rounded-2xl">
             <h3 className="text-xl mb-1">Clearer</h3>
@@ -54,10 +60,10 @@ const Portfolio = () => {
           {/* Right Column */}
           <div className="flex-1 grid gap-3">
             <div className="text-blue-600 hover:underline">
-              <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">@MastracciN →</a>
+              <a href="https://github.com/MastracciN" target="_blank" rel="noopener noreferrer">@MastracciN →</a>
             </div>
             <div className="text-blue-600 hover:underline">
-              <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">@Mastracci →</a>
+              <a href="https://www.linkedin.com/in/mastracci/" target="_blank" rel="noopener noreferrer">@Mastracci →</a>
             </div>
             <div className="text-blue-600 hover:underline">
               <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume →</a>
