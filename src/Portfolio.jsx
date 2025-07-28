@@ -6,13 +6,13 @@ import pic from './assets/profile.jpg'
 const Portfolio = () => {
 
   return (
-    <div className="min-h-screen w-full font-sans text-white bg-black">
+    <div className="min-h-screen w-full font-sans text-white bg-black py-10">
       {/* Navbar */}
-      <Header />
+      {/* <Header /> */}
       <div className="max-w-3xl mx-auto px-4">
 
       {/* Intro Section */}
-      <section id="intro" className="flex flex-col lg:flex-row justify-center items-center text-left lg:space-x-12 px-6">
+      <section id="intro" className="flex flex-col lg:flex-row  items-center text-left space-x-8 px-6">
         <img src={pic} alt="Profile" className="w-52 aspect-square rounded-full object-cover mb-6 lg:mb-0"/>
         <div>
           <h1 className="text-5xl mb-4">Nathaniel Mastracci</h1>
@@ -21,7 +21,7 @@ const Portfolio = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 px-6">
+      <section id="about" className="py-10 px-6">
         <div className="">
           <h2 className="text-3xl mb-6">About Me</h2>
           <p className="text-lg">I enjoy coding the most when I'm building solutions for others. 
@@ -32,21 +32,17 @@ const Portfolio = () => {
       {/* TODO: projects centered, image on left, desc. on right */}
       {/* Projects Section */}
       <section id="projects" className="px-6">
-        <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl mb-10">Projects</h2>
-          
           {/* Project 1 */}
           <div className="rounded-2xl">
             <h3 className="text-xl font-semibold mb-2">Clearer</h3>
-            <p className="text-gray-600 mb-4">An assistive reading tool for children with Auditory Processing Disorder built in Android.</p>
+            <p className="mb-4">An assistive reading tool for children with Auditory Processing Disorder built in Android.</p>
             <a href="https://github.com/MastracciN/Clearer" className="text-blue-600 hover:underline">View Project →</a>
           </div>
-
-        </div>
       </section>
 
       {/* Skills Section */}
-      {/* <Skills /> */}
+      <Skills />
 
     {/* Contact Section */}
       {/* <section id="contact" className="py-20 px-6 bg-white dark:bg-gray-900">
