@@ -4,54 +4,49 @@ import Skills from "./components/Skills.jsx"
 import pic from './assets/profile.jpg'
 
 const Portfolio = () => {
-  
-  return (
-    <div className="font-sans text-gray-900">
-      {/* Navbar */}
-      <div className='bg-gradient-to-b from-blue-100 to-white'>
-        <Header />
 
-        {/* Intro Section */}
-        <section id="intro" className="h-[90vh] flex flex-col justify-center items-center text-center px-6">
-          <img src={pic} alt="Profile" className="w-64 h-64 rounded-full object-cover mb-10"/>
-          <h1 className="text-5xl font-extrabold mb-4">Hi, I’m Nathaniel</h1>
-          <p className="text-lg text-gray-600 max-w-xl">I'm searching for problems to solve.</p>
-        </section>
-      </div>
+  return (
+    <div className="min-h-screen w-full font-sans text-white bg-black">
+      {/* Navbar */}
+      <Header />
+      <div className="max-w-3xl mx-auto px-4">
+
+      {/* Intro Section */}
+      <section id="intro" className="flex flex-col lg:flex-row justify-center items-center text-left lg:space-x-12 px-6">
+        <img src={pic} alt="Profile" className="w-52 aspect-square rounded-full object-cover mb-6 lg:mb-0"/>
+        <div>
+          <h1 className="text-5xl mb-4">Nathaniel Mastracci</h1>
+          <p className="text-lg text-gray-200">I usually <s>break</s> build things.</p>
+        </div>
+      </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 px-6 bg-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">About Me</h2>
-          <p className="text-gray-700 text-lg">I enjoy coding the most when I'm building solutions for others. 
+      <section id="about" className="py-20 px-6">
+        <div className="">
+          <h2 className="text-3xl mb-6">About Me</h2>
+          <p className="text-lg">I enjoy coding the most when I'm building solutions for others. 
             I want to work on projects that solve real problems, no matter how big or small.</p>
         </div>
       </section>
 
+      {/* TODO: projects centered, image on left, desc. on right */}
       {/* Projects Section */}
-      <section id="projects" className="py-20 px-6 bg-gray-50">
+      <section id="projects" className="px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {/* Project 1 */}
-            <div className="bg-white shadow-lg rounded-2xl p-6 transition hover:shadow-xl">
-              <h3 className="text-xl font-semibold mb-2">Clearer</h3>
-              <p className="text-gray-600 mb-4">An assistive reading tool for children with Auditory Processing Disorder built in Android.</p>
-              <a href="https://github.com/MastracciN/Clearer" className="text-blue-600 hover:underline">View Project →</a>
-            </div>
-
-            {/* Project 2 */}
-            <div className="bg-white shadow-lg rounded-2xl p-6 transition hover:shadow-xl">
-              <h3 className="text-xl font-semibold mb-2">Collectors</h3>
-              <p className="text-gray-600 mb-4">A tool to manage collections using UPCs (barcodes).</p>
-              <a href="#" className="text-blue-600 hover:underline">View Project →</a>
-            </div>
+          <h2 className="text-4xl mb-10">Projects</h2>
+          
+          {/* Project 1 */}
+          <div className="rounded-2xl">
+            <h3 className="text-xl font-semibold mb-2">Clearer</h3>
+            <p className="text-gray-600 mb-4">An assistive reading tool for children with Auditory Processing Disorder built in Android.</p>
+            <a href="https://github.com/MastracciN/Clearer" className="text-blue-600 hover:underline">View Project →</a>
           </div>
+
         </div>
       </section>
 
       {/* Skills Section */}
-      <Skills />
+      {/* <Skills /> */}
 
     {/* Contact Section */}
       {/* <section id="contact" className="py-20 px-6 bg-white dark:bg-gray-900">
@@ -76,9 +71,10 @@ const Portfolio = () => {
       </section> */}
 
       {/* Footer */}
-      <footer className="py-6 bg-white border-t text-center text-sm text-gray-500">
-        {/* © 2025 Your Name. All rights reserved. */}
-      </footer>
+      {/* <footer className="py-6 bg-white border-t text-center text-sm text-gray-500">
+        © 2025 Your Name. All rights reserved.
+      </footer> */}
+      </div>
     </div>
   );
 };
