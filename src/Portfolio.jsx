@@ -12,9 +12,9 @@ const Portfolio = () => {
       <div className="relative lg:flex lg:w-5/7 mx-auto">
         {/* Intro Section */}
         <section id="intro" 
-          className="flex flex-col lg:flex-row items-center text-left space-x-8 px-6 py-10
-                     lg:sticky lg:top-0 lg:h-screen lg:w-2/5 lg:items-start">
-          <img src={pic} alt="Profile" className="w-45 aspect-square rounded-full object-cover mb-6 lg:mb-0"/>
+          className="flex flex-col items-center text-left px-6 py-10
+             lg:sticky lg:top-0 lg:h-screen lg:w-2/5 lg:items-center lg:justify-start lg:pt-[10%]">
+          <img src={pic} alt="Profile" className="w-70 aspect-square rounded-full object-cover mb-6 lg:mb-10"/>
           <div>
             <h1 className="text-4xl mb-1">Nathaniel Mastracci</h1>
             <p className="text-lg text-gray-400">Full-Stack Developer</p>
@@ -25,7 +25,7 @@ const Portfolio = () => {
         </section>
 
         {/* Right Column */}
-        <div className="w-full lg:w-3/5 overflow-y-auto px-6 py-10">
+        <div className="w-full lg:w-3/5 overflow-y-auto lg:p-10">
           {/* About Section */}
           <section id="about" className="px-6 mb-10">
             <h2 className="text-2xl mb-5">About</h2>
