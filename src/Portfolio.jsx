@@ -6,12 +6,14 @@ import pic from './assets/profile.jpg'
 const Portfolio = () => {
 
   return (
-    <div className="text-white bg-black min-h-screen relative lg:flex">
+    <div className="text-white bg-black min-h-screen">
       {/* Navbar */}
       {/* <Header /> */}
-
+      <div className="relative lg:flex lg:w-5/7 mx-auto">
         {/* Intro Section */}
-        <section id="intro" className="flex flex-col lg:flex-row  items-center text-left space-x-8 px-6 py-10">
+        <section id="intro" 
+          className="flex flex-col lg:flex-row items-center text-left space-x-8 px-6 py-10
+                     lg:sticky lg:top-0 lg:h-screen lg:w-2/5 lg:items-start">
           <img src={pic} alt="Profile" className="w-45 aspect-square rounded-full object-cover mb-6 lg:mb-0"/>
           <div>
             <h1 className="text-4xl mb-1">Nathaniel Mastracci</h1>
@@ -21,88 +23,91 @@ const Portfolio = () => {
             </p>
           </div>
         </section>
+
+        {/* Right Column */}
         <div className="w-full lg:w-3/5 overflow-y-auto px-6 py-10">
-        {/* About Section */}
-        <section id="about" className="px-6 mb-10">
-          <h2 className="text-2xl mb-5">About</h2>
-          <p className="text-gray-400">I enjoy coding the most when I'm building solutions for others. 
-              I want to work on projects that solve real problems, no matter how big or small.</p>
-        </section>
+          {/* About Section */}
+          <section id="about" className="px-6 mb-10">
+            <h2 className="text-2xl mb-5">About</h2>
+            <p className="text-gray-400">I enjoy coding the most when I'm building solutions for others. 
+                I want to work on projects that solve real problems, no matter how big or small.</p>
+          </section>
 
-        {/* Work Experience Section */}
-        <section id="workexperience" className="px-6 mb-10">
-          <h2 className="text-2xl mb-5">Work Experience</h2>
-          {/* Experience 1 */}
-          <div className="flex">
-            <p className="mb-1">Research Assistant — Sheridan Centre for Applied AI</p>
-            <p className="text-gray-500 mb-1 ml-auto">Jan. 2023 - Apr. 2024</p>
-          </div>
-          <p className="text-gray-400 mb-1">Developed a machine learning model for the classification of heart sounds collected via electronic stethoscope.
-            Presented and published a paper on this research available here.
-          </p>
-          <p className="text-gray-500 mb-5">Python • TensorFlow • Pandas • NumPy</p>
-
-          {/* Experience 2 */}
-          <div className="flex">
-            <p className="mb-1">Research Assistant — Sheridan Centre for Applied AI</p>
-            <p className="text-gray-500 mb-1 ml-auto">May 2022 - Aug. 2023</p>
-          </div>
-          <p className="text-gray-400 mb-1">Researched state-of-the-art voice cloning solutions, emphasizing cross-lingual capabilities, AI model effectiveness,
-            and optimal dataset practices. Developed voice clones with Python and PyCaret, utilizing Wav2Lip to produce AI-generated lip-synced videos and explore
-            practical applications of voice cloning technology.
-          </p>
-          <p className="text-gray-500 mb-5">Python • PyCaret • NumPy</p>
-
-          {/* Experience 3 */}
-          <div className="flex">
-            <p className="mb-1">Front-End Developer — Claret Asset Management</p>
-            <p className="text-gray-500 mb-1 ml-auto">July 2019 - Apr. 2020</p>
-          </div>
-          <p className="text-gray-400 mb-1">Developed the front end of a client-onboarding web application, creating extensive forms to manage client personal
-            and financial information.
-          </p>
-          <p className="text-gray-500 mb-5">AngularJS • JavaScript • HTML • CSS</p>
-
-
-        </section>
-
-        {/* Projects Section */}
-        <section id="projects" className="px-6 mb-10">
-            <h2 className="text-2xl mb-5">Projects</h2>
-            {/* Project 1 */}
-            <div className="rounded-2xl">
-              <a href="https://github.com/MastracciN/Clearer" className="text-lg mb-1 hover:underline"
-                target="_blank" rel="noopener noreferrer">Clearer →</a>
-              <p className="text-gray-400 mb-1">An assistive reading tool for children with Auditory Processing Disorder built in Android.</p>
-              <p className="text-gray-500 mb-1">Kotlin • React • Firestore • Figma</p>
+          {/* Work Experience Section */}
+          <section id="workexperience" className="px-6 mb-10">
+            <h2 className="text-2xl mb-5">Work Experience</h2>
+            {/* Experience 1 */}
+            <div className="flex">
+              <p className="mb-1">Research Assistant — Sheridan Centre for Applied AI</p>
+              <p className="text-gray-500 mb-1 ml-auto">Jan. 2023 - Apr. 2024</p>
             </div>
-        </section>
+            <p className="text-gray-400 mb-1">Developed a machine learning model for the classification of heart sounds collected via electronic stethoscope.
+              Presented and published a paper on this research available here.
+            </p>
+            <p className="text-gray-500 mb-5">Python • TensorFlow • Pandas • NumPy</p>
 
-        <section id="links" className="px-6">
-          <h2 className="text-2xl mb-4">Links</h2>
-          <div className="flex w-full">
-            {/* Left Column */}
-            <div className="w-1/4 grid gap-3">
-              <div className="text-gray-400">GitHub</div>
-              <div className="text-gray-400">LinkedIn</div>
-              <div className="text-gray-400">Resume</div>
+            {/* Experience 2 */}
+            <div className="flex">
+              <p className="mb-1">Research Assistant — Sheridan Centre for Applied AI</p>
+              <p className="text-gray-500 mb-1 ml-auto">May 2022 - Aug. 2023</p>
             </div>
+            <p className="text-gray-400 mb-1">Researched state-of-the-art voice cloning solutions, emphasizing cross-lingual capabilities, AI model effectiveness,
+              and optimal dataset practices. Developed voice clones with Python and PyCaret, utilizing Wav2Lip to produce AI-generated lip-synced videos and explore
+              practical applications of voice cloning technology.
+            </p>
+            <p className="text-gray-500 mb-5">Python • PyCaret • NumPy</p>
 
-            {/* Right Column */}
-            <div className="flex-1 grid gap-3">
-              <div className="text-blue-600 hover:underline">
-                <a href="https://github.com/MastracciN" target="_blank" rel="noopener noreferrer">@MastracciN →</a>
+            {/* Experience 3 */}
+            <div className="flex">
+              <p className="mb-1">Front-End Developer — Claret Asset Management</p>
+              <p className="text-gray-500 mb-1 ml-auto">July 2019 - Apr. 2020</p>
+            </div>
+            <p className="text-gray-400 mb-1">Developed the front end of a client-onboarding web application, creating extensive forms to manage client personal
+              and financial information.
+            </p>
+            <p className="text-gray-500 mb-5">AngularJS • JavaScript • HTML • CSS</p>
+
+
+          </section>
+
+          {/* Projects Section */}
+          <section id="projects" className="px-6 mb-10">
+              <h2 className="text-2xl mb-5">Projects</h2>
+              {/* Project 1 */}
+              <div className="rounded-2xl">
+                <a href="https://github.com/MastracciN/Clearer" className="text-lg mb-1 hover:underline"
+                  target="_blank" rel="noopener noreferrer">Clearer →</a>
+                <p className="text-gray-400 mb-1">An assistive reading tool for children with Auditory Processing Disorder built in Android.</p>
+                <p className="text-gray-500 mb-1">Kotlin • React • Firestore • Figma</p>
               </div>
-              <div className="text-blue-600 hover:underline">
-                <a href="https://www.linkedin.com/in/mastracci/" target="_blank" rel="noopener noreferrer">@Mastracci →</a>
+          </section>
+
+          <section id="links" className="px-6">
+            <h2 className="text-2xl mb-4">Links</h2>
+            <div className="flex w-full">
+              {/* Left Column */}
+              <div className="w-1/4 grid gap-3">
+                <div className="text-gray-400">GitHub</div>
+                <div className="text-gray-400">LinkedIn</div>
+                <div className="text-gray-400">Resume</div>
               </div>
-              <div className="text-blue-600 hover:underline">
-                <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume →</a>
+
+              {/* Right Column */}
+              <div className="flex-1 grid gap-3">
+                <div className="text-blue-600 hover:underline">
+                  <a href="https://github.com/MastracciN" target="_blank" rel="noopener noreferrer">@MastracciN →</a>
+                </div>
+                <div className="text-blue-600 hover:underline">
+                  <a href="https://www.linkedin.com/in/mastracci/" target="_blank" rel="noopener noreferrer">@Mastracci →</a>
+                </div>
+                <div className="text-blue-600 hover:underline">
+                  <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume →</a>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+         </section>
         </div>
+      </div>
     </div>
   );
 };
