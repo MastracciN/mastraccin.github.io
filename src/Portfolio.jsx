@@ -49,7 +49,7 @@ const Portfolio = () => {
             <h2 className="text-xl mb-5">About</h2>
             <p className="text-gray-400">I enjoy building things that people actually <b>want</b> to use. 
               Whether it's a big project or a small feature, there's something really satisfying about creating something useful.
-               I've had the opportunity to work on a variety of different projects—from web apps to machine learning projects—which 
+               I've had the opportunity to work on a variety of different projects—from <b>web</b> apps to <b>machine learning</b> projects—which 
                has helped me pick up new skills quickly and stay curious.
                <br/><br/>
                When I'm not at my computer, I'm probably watching movies or walking my dog.
@@ -60,7 +60,7 @@ const Portfolio = () => {
 
           {/* Work Experience Section */}
           <section id="workexperience" className="mb-15">
-            <h2 className="text-xl mb-5 px-6">Work Experience</h2>
+            <h2 className="text-xl mb-3 px-6">Work Experience</h2>
             {/* Experience 1 */}
             <div className="transition-colors duration-300 hover:bg-gray-900 rounded-lg p-6">
               <p className="text-gray-500 mb-1 text-sm">2023 — 2024</p>
@@ -92,23 +92,22 @@ const Portfolio = () => {
               <p className="text-gray-500 text-sm">HTML • CSS • JavaScript • AngularJS</p>
             </div>
 
-            <div className="hover:underline hover:text-blue-500 m-6">
-              <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">View Full Resume ↗</a>
+            <div className="m-6">
+              <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer"
+                className="hover:underline hover:text-blue-500 transition-colors duration-300">View Full Resume ↗</a>
             </div>
-
 
           </section>
 
           {/* Projects Section */}
           <section id="projects" className="mb-15">
-              <h2 className="text-xl mb-5 mx-6">Projects</h2>
-              {/* Project 1 */}
-              <div className="transition-colors duration-300 hover:bg-gray-900 rounded-lg p-6">
-                <a href="https://github.com/MastracciN/Clearer" className="text-lg mb-1 hover:underline hover:text-blue-500"
-                  target="_blank" rel="noopener noreferrer">Clearer ↗</a>
+              <h2 className="text-xl mb-3 mx-6">Projects</h2>
+              <a href="https://github.com/MastracciN/Clearer" target="_blank" rel="noopener noreferrer"
+                className="block group transition-colors duration-300 hover:bg-gray-900 rounded-lg p-6">
+                <p className="text-lg mb-1 group-hover:underline group-hover:text-blue-500 transition-colors duration-300">Clearer ↗</p>
                 <p className="text-gray-400 mb-1">An assistive reading tool for children with Auditory Processing Disorder built in Android.</p>
                 <p className="text-gray-500 mb-1 text-sm">Kotlin • React • Firestore • Figma</p>
-              </div>
+              </a>
           </section>
 
           {/* Links Section */}
