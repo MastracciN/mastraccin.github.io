@@ -7,7 +7,7 @@ import pic from './assets/profile.jpg'
 const Portfolio = () => {
 
   return (
-    <div className="text-white bg-linear-to-br from-black to-[#110d1f] tomin-h-screen">
+    <div className="text-white bg-linear-to-br from-black to-[#110d1f] min-h-screen">
       {/* Navbar */}
       {/* <Header /> */}
       <div className="relative lg:flex lg:w-5/7 mx-auto">
@@ -15,13 +15,12 @@ const Portfolio = () => {
         <section id="intro" 
           className="flex flex-col  text-left px-6 py-10
              lg:sticky lg:top-0 lg:h-screen lg:w-2/5 lg:pt-[10%] lg:pl-[10%]">
-          <img src={pic} alt="Profile" className="w-70 aspect-square rounded-full object-cover mb-6 lg:mb-10"/>
+          <img src={pic} alt="Profile" 
+            className="w-70 aspect-square rounded-full object-cover mb-6 lg:mb-10 
+              transition-transform duration-300 hover:scale-103"/>
           <div>
             <h1 className="text-4xl mb-1">Nathaniel Mastracci</h1>
             <p className="text-lg text-gray-400">Full-Stack Developer</p>
-            {/* <p className="text-lg text-gray-500">
-              I usually <s>break</s> build things.
-            </p> */}
             <Build />
           </div>
 
@@ -47,41 +46,53 @@ const Portfolio = () => {
         <div className="w-full lg:w-3/5 overflow-y-auto lg:p-10">
           {/* About Section */}
           <section id="about" className="px-6 mb-15">
-            <h2 className="text-2xl mb-5">About</h2>
-            <p className="text-gray-400">I enjoy coding the most when I'm building solutions for others. 
-                I want to work on projects that solve real problems, no matter how big or small.</p>
+            <h2 className="text-xl mb-5">About</h2>
+            <p className="text-gray-400">I enjoy building things that people actually <b>want</b> to use. 
+              Whether it's a big project or a small feature, there's something really satisfying about creating something useful.
+               I've had the opportunity to work on a variety of different projects—from web apps to machine learning projects—which 
+               has helped me pick up new skills quickly and stay curious.
+               <br/><br/>
+               When I'm not at my computer, I'm probably watching movies or walking my dog.
+               <br/><br/>
+               I’m always open to new opportunities. If you think I’d be a good fit, feel free to reach out.
+              </p>
           </section>
 
           {/* Work Experience Section */}
-          {/* gradients on work experiences, fortnite */}
-          <section id="workexperience" className="px-6 mb-15">
-            <h2 className="text-2xl mb-5">Work Experience</h2>
+          <section id="workexperience" className="mb-15">
+            <h2 className="text-xl mb-5 px-6">Work Experience</h2>
             {/* Experience 1 */}
-            <p className="text-gray-500 mb-1 ml-auto">2023 — 2024</p>
-            <p className="mb-1">Research Assistant • Sheridan Centre for Applied AI</p>
-            <p className="text-gray-400 mb-1">Developed a machine learning model for the classification of heart sounds collected via electronic stethoscope.
-              Presented and published a paper on this research available here.
-            </p>
-            <p className="text-gray-500 mb-8">Python • TensorFlow • Pandas • NumPy</p>
+            <div className="transition-colors duration-300 hover:bg-gray-900 rounded-lg p-6">
+              <p className="text-gray-500 mb-1 text-sm">2023 — 2024</p>
+              <p className="mb-1 text-lg">Research Assistant • Sheridan Centre for Applied AI</p>
+              <p className="text-gray-400 mb-1">Developed a machine learning model for the classification of heart sounds collected via electronic stethoscope.
+                Presented and published a paper on this research available here.
+              </p>
+              <p className="text-gray-500  text-sm">Python • TensorFlow • Pandas • NumPy</p>
+            </div>
 
             {/* Experience 2 */}
-            <p className="text-gray-500 mb-1 ml-auto">May — Aug 2022</p>
-            <p className="mb-1">Research Assistant • Sheridan Centre for Applied AI</p>
-            <p className="text-gray-400 mb-1">Researched state-of-the-art voice cloning solutions, emphasizing cross-lingual capabilities, AI model effectiveness,
-              and optimal dataset practices. Developed voice clones with Python and PyCaret, utilizing Wav2Lip to produce AI-generated lip-synced videos and explore
-              practical applications of voice cloning technology.
-            </p>
-            <p className="text-gray-500 mb-8">Python • PyCaret • NumPy</p>
+            <div className="transition-colors duration-300 hover:bg-gray-900 rounded-lg p-6">
+              <p className="text-gray-500 mb-1 text-sm">May — Aug 2022</p>
+              <p className="mb-1 text-lg">Research Assistant • Sheridan Centre for Applied AI</p>
+              <p className="text-gray-400 mb-1">Researched state-of-the-art voice cloning solutions, emphasizing cross-lingual capabilities, AI model effectiveness,
+                and optimal dataset practices. Developed voice clones with Python and PyCaret, utilizing Wav2Lip to produce AI-generated lip-synced videos and explore
+                practical applications of voice cloning technology.
+              </p>
+              <p className="text-gray-500 text-sm">Python • PyCaret • NumPy</p>
+            </div>
 
             {/* Experience 3 */}
-            <p className="text-gray-500 mb-1 ml-auto">2019 — 2020</p>
-            <p className="mb-1">Front-End Developer • Claret Asset Management</p>
-            <p className="text-gray-400 mb-1">Developed the front end of a client-onboarding web application, creating extensive forms to manage client personal
-              and financial information.
-            </p>
-            <p className="text-gray-500 mb-8">AngularJS • JavaScript • HTML • CSS</p>
+            <div className="transition-colors duration-300 hover:bg-gray-900 rounded-lg p-6">
+              <p className="text-gray-500 mb-1 text-sm">2019 — 2020</p>
+              <p className="mb-1 text-lg">Front-End Developer • Claret Asset Management</p>
+              <p className="text-gray-400 mb-1">Developed the front end of a client-onboarding web application, creating extensive forms to manage client personal
+                and financial information.
+              </p>
+              <p className="text-gray-500 text-sm">HTML • CSS • JavaScript • AngularJS</p>
+            </div>
 
-            <div className="hover:underline hover:text-blue-500">
+            <div className="hover:underline hover:text-blue-500 m-6">
               <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">View Full Resume ↗</a>
             </div>
 
@@ -89,14 +100,14 @@ const Portfolio = () => {
           </section>
 
           {/* Projects Section */}
-          <section id="projects" className="px-6 mb-15">
-              <h2 className="text-2xl mb-5">Projects</h2>
+          <section id="projects" className="mb-15">
+              <h2 className="text-xl mb-5 mx-6">Projects</h2>
               {/* Project 1 */}
-              <div className="rounded-2xl">
+              <div className="transition-colors duration-300 hover:bg-gray-900 rounded-lg p-6">
                 <a href="https://github.com/MastracciN/Clearer" className="text-lg mb-1 hover:underline hover:text-blue-500"
                   target="_blank" rel="noopener noreferrer">Clearer ↗</a>
                 <p className="text-gray-400 mb-1">An assistive reading tool for children with Auditory Processing Disorder built in Android.</p>
-                <p className="text-gray-500 mb-1">Kotlin • React • Firestore • Figma</p>
+                <p className="text-gray-500 mb-1 text-sm">Kotlin • React • Firestore • Figma</p>
               </div>
           </section>
 
