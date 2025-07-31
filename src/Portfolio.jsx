@@ -7,7 +7,7 @@ import pic from './assets/profile.jpg'
 const Portfolio = () => {
 
   return (
-    <div className="text-white bg-black min-h-screen">
+    <div className="text-white bg-linear-to-br from-black to-[#110d1f] tomin-h-screen">
       {/* Navbar */}
       {/* <Header /> */}
       <div className="relative lg:flex lg:w-5/7 mx-auto">
@@ -81,7 +81,7 @@ const Portfolio = () => {
             </p>
             <p className="text-gray-500 mb-8">AngularJS • JavaScript • HTML • CSS</p>
 
-            <div className="text-blue-600 hover:underline">
+            <div className="hover:underline hover:text-blue-500">
               <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">View Full Resume ↗</a>
             </div>
 
@@ -93,8 +93,8 @@ const Portfolio = () => {
               <h2 className="text-2xl mb-5">Projects</h2>
               {/* Project 1 */}
               <div className="rounded-2xl">
-                <a href="https://github.com/MastracciN/Clearer" className="text-lg mb-1 hover:underline"
-                  target="_blank" rel="noopener noreferrer">Clearer →</a>
+                <a href="https://github.com/MastracciN/Clearer" className="text-lg mb-1 hover:underline hover:text-blue-500"
+                  target="_blank" rel="noopener noreferrer">Clearer ↗</a>
                 <p className="text-gray-400 mb-1">An assistive reading tool for children with Auditory Processing Disorder built in Android.</p>
                 <p className="text-gray-500 mb-1">Kotlin • React • Firestore • Figma</p>
               </div>
