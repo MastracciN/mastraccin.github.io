@@ -1,3 +1,3 @@
-# Nathaniel Mastracci Portfolio
+# My Portfolio
 
-Built with React and Tailwind
+Built with React, Tailwind, and Vite
