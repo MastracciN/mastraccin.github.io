@@ -10,13 +10,14 @@ const Portfolio = () => {
     <div className="text-white bg-linear-to-br from-black to-[#110d1f] min-h-screen">
       {/* Navbar */}
       {/* <Header /> */}
-      <div className="relative lg:flex lg:w-5/7 mx-auto">
+      {/* <div className="relative lg:flex lg:w-5/7 mx-auto max-w-[1400px] px-6 md:px-10 gap-4"> */}
+      <div className="relative lg:flex w-full max-w-[1350px] mx-auto gap-4 px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
         {/* Intro Section */}
-        <section id="intro" 
-          className="flex flex-col  text-left px-6 py-10
-             lg:sticky lg:top-0 lg:h-screen lg:w-2/5 lg:pt-[10%] lg:pl-[10%]">
+        <aside id="intro" 
+          className="flex flex-col py-10 w-full
+             lg:sticky lg:top-0 lg:h-screen lg:w-[44%] lg:pt-[10%]">
           <img src={pic} alt="Profile" 
-            className="w-70 aspect-square rounded-full object-cover mb-6 lg:mb-10 
+            className="w-50 md:w-56 lg:w-64 xl:w-70 aspect-square rounded-full object-cover mb-6 lg:mb-10 
               transition-transform duration-300 hover:scale-103"/>
           <div>
             <h1 className="text-4xl mb-1">Nathaniel Mastracci</h1>
@@ -25,7 +26,7 @@ const Portfolio = () => {
           </div>
 
           {/* Links */}
-          <div className="flex flex-row py-8 gap-x-3 justify-start">
+          <div className="flex flex-row gap-x-3 justify-start">
             <a href="https://github.com/MastracciN" target="_blank" rel="noopener noreferrer"
               className="opacity-60 hover:opacity-100 transition-opacity duration-200">
               <svg viewBox="0 0 128 128" width="30" height="30">
@@ -40,12 +41,12 @@ const Portfolio = () => {
             </a>
           </div>
           
-        </section>
+        </aside>
 
         {/* Right Column */}
-        <div className="w-full lg:w-3/5 overflow-y-auto lg:p-10">
+        <main className="w-full lg:w-[56%] pb-4 lg:py-18">
           {/* About Section */}
-          <section id="about" className="px-6 mb-15">
+          <section id="about" className="mb-15">
             <h2 className="text-xl mb-5">About</h2>
             <p className="text-gray-400">I enjoy building things that people actually <b>want</b> to use. 
               Whether it's a big project or a small feature, there's something really satisfying about creating something useful.
@@ -60,9 +61,10 @@ const Portfolio = () => {
 
           {/* Work Experience Section */}
           <section id="workexperience" className="mb-15">
-            <h2 className="text-xl mb-3 px-6">Work Experience</h2>
+            <h2 className="text-xl mb-3">Work Experience</h2>
             {/* Experience 1 */}
-            <div className="transition-colors duration-300 hover:bg-gray-900 rounded-lg p-6">
+            {/* <div className="transition-colors duration-300 hover:bg-gray-900 rounded-lg py-6"> */}
+            <div className="transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
               <p className="text-gray-500 mb-1 text-sm">2023 — 2024</p>
               <p className="mb-1 text-lg">Research Assistant • Sheridan Centre for Applied AI</p>
               <p className="text-gray-400 mb-1">Developed a machine learning model for the classification of heart sounds collected via electronic stethoscope.
@@ -72,7 +74,7 @@ const Portfolio = () => {
             </div>
 
             {/* Experience 2 */}
-            <div className="transition-colors duration-300 hover:bg-gray-900 rounded-lg p-6">
+            <div className="transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
               <p className="text-gray-500 mb-1 text-sm">May — Aug 2022</p>
               <p className="mb-1 text-lg">Research Assistant • Sheridan Centre for Applied AI</p>
               <p className="text-gray-400 mb-1">Researched state-of-the-art voice cloning solutions, emphasizing cross-lingual capabilities, AI model effectiveness,
@@ -83,7 +85,7 @@ const Portfolio = () => {
             </div>
 
             {/* Experience 3 */}
-            <div className="transition-colors duration-300 hover:bg-gray-900 rounded-lg p-6">
+            <div className="transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
               <p className="text-gray-500 mb-1 text-sm">2019 — 2020</p>
               <p className="mb-1 text-lg">Front-End Developer • Claret Asset Management</p>
               <p className="text-gray-400 mb-1">Developed the front end of a client-onboarding web application, creating extensive forms to manage client personal
@@ -92,7 +94,7 @@ const Portfolio = () => {
               <p className="text-gray-500 text-sm">HTML • CSS • JavaScript • AngularJS</p>
             </div>
 
-            <div className="m-6">
+            <div className="py-6">
               <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer"
                 className="hover:underline hover:text-blue-500 transition-colors duration-300">View Full Resume ↗</a>
             </div>
@@ -101,9 +103,9 @@ const Portfolio = () => {
 
           {/* Projects Section */}
           <section id="projects" className="mb-15">
-              <h2 className="text-xl mb-3 mx-6">Projects</h2>
+              <h2 className="text-xl mb-3">Projects</h2>
               <a href="https://github.com/MastracciN/Clearer" target="_blank" rel="noopener noreferrer"
-                className="block group transition-colors duration-300 hover:bg-gray-900 rounded-lg p-6">
+                className="block group transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
                 <p className="text-lg mb-1 group-hover:underline group-hover:text-blue-500 transition-colors duration-300">Clearer ↗</p>
                 <p className="text-gray-400 mb-1">An assistive reading tool for children with Auditory Processing Disorder built in Android.</p>
                 <p className="text-gray-500 mb-1 text-sm">Kotlin • React • Firestore • Figma</p>
@@ -133,7 +135,7 @@ const Portfolio = () => {
             </div>
           </section> */}
 
-        </div>
+        </main>
       </div>
     </div>
   );
