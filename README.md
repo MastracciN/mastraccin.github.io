@@ -1,3 +1,3 @@
 # My Portfolio
 
-Built with React, Tailwind, and Vite
+Built with React and Tailwind CSS
