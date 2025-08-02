@@ -93,7 +93,7 @@ const Portfolio = () => {
             </div>
 
             <div className="m-6">
-              <a href={`${import.meta.env.BASE_URL}Resume.pdf`} target="_blank" rel="noopener noreferrer"
+              <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer"
                 className="hover:underline hover:text-blue-500 transition-colors duration-300">View Full Resume ↗</a>
             </div>
 
