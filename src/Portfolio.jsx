@@ -11,11 +11,11 @@ const Portfolio = () => {
       {/* Navbar */}
       {/* <Header /> */}
       {/* <div className="relative lg:flex lg:w-5/7 mx-auto max-w-[1400px] px-6 md:px-10 gap-4"> */}
-      <div className="relative lg:flex w-full max-w-[1350px] mx-auto gap-4 px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+      <div className="relative lg:flex w-full max-w-[1400px] mx-auto gap-4 px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
         {/* Intro Section */}
         <aside id="intro" 
           className="flex flex-col py-10 w-full
-             lg:sticky lg:top-0 lg:h-screen lg:w-[44%] lg:pt-[10%]">
+             lg:sticky lg:top-0 lg:h-screen lg:w-[44%] lg:items-center lg:justify-center">
           <img src={pic} alt="Profile" 
             className="w-50 md:w-56 lg:w-64 xl:w-70 aspect-square rounded-full object-cover mb-6 lg:mb-10 
               transition-transform duration-300 hover:scale-103"/>
