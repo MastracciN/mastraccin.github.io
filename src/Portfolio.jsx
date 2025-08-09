@@ -15,7 +15,7 @@ const Portfolio = () => {
         {/* Intro Section */}
         <aside id="intro" 
           className="flex flex-col py-10 w-full
-             lg:sticky lg:top-0 lg:h-screen lg:w-[44%] lg:items-center lg:justify-center">
+             lg:sticky lg:top-0 lg:h-screen lg:w-[48%] lg:items-center lg:justify-center">
           <img src={pic} alt="Profile" 
             className="w-50 md:w-56 lg:w-64 xl:w-70 aspect-square rounded-full object-cover mb-6 lg:mb-10 
               transition-transform duration-300 hover:scale-103"/>
@@ -26,7 +26,7 @@ const Portfolio = () => {
           </div>
 
           {/* Links */}
-          <div className="flex flex-row gap-x-3 justify-start">
+          <div className="flex flex-row gap-x-3 justify-start mb-5">
             <a href="https://github.com/MastracciN" target="_blank" rel="noopener noreferrer"
               className="opacity-60 hover:opacity-100 transition-opacity duration-200">
               <svg viewBox="0 0 128 128" width="30" height="30">
@@ -39,14 +39,13 @@ const Portfolio = () => {
                 <g fill="#ffffff"><path d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3zM39.17 107H21.06V48.73h18.11zm-9-66.21a10.5 10.5 0 1110.49-10.5 10.5 10.5 0 01-10.54 10.48zM107 107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53V48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75z"></path></g>
               </svg>
             </a>
-          </div>
-          
+          </div> 
         </aside>
 
         {/* Right Column */}
-        <main className="w-full lg:w-[56%] pb-4 lg:py-18">
+        <main className="w-full lg:w-[52%] pb-4 lg:py-18">
           {/* About Section */}
-          <section id="about" className="mb-15">
+          <section id="about" className="mb-20">
             <h2 className="text-xl mb-5">About</h2>
             <p className="text-gray-400">I enjoy building things that people actually <b>want</b> to use. 
               Whether it's a big project or a small feature, there's something really satisfying about creating something useful.
@@ -60,8 +59,8 @@ const Portfolio = () => {
           </section>
 
           {/* Work Experience Section */}
-          <section id="workexperience" className="mb-15">
-            <h2 className="text-xl mb-3">Work Experience</h2>
+          <section id="workexperience" className="mb-20">
+            <h2 className="text-xl mb-3">Experience</h2>
             {/* Experience 1 */}
             {/* <div className="transition-colors duration-300 hover:bg-gray-900 rounded-lg py-6"> */}
             <div className="transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
@@ -94,7 +93,7 @@ const Portfolio = () => {
               <p className="text-gray-500 text-sm">HTML • CSS • JavaScript • AngularJS</p>
             </div>
 
-            <div className="py-6">
+            <div className="pt-6">
               <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer"
                 className="hover:underline hover:text-blue-500 transition-colors duration-300">View Full Resume ↗</a>
             </div>
@@ -102,13 +101,19 @@ const Portfolio = () => {
           </section>
 
           {/* Projects Section */}
-          <section id="projects" className="mb-15">
+          <section id="projects" className="mb-20">
               <h2 className="text-xl mb-3">Projects</h2>
               <a href="https://github.com/MastracciN/Clearer" target="_blank" rel="noopener noreferrer"
                 className="block group transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
                 <p className="text-lg mb-1 group-hover:underline group-hover:text-blue-500 transition-colors duration-300">Clearer ↗</p>
                 <p className="text-gray-400 mb-1">An assistive reading tool for children with Auditory Processing Disorder built in Android.</p>
                 <p className="text-gray-500 mb-1 text-sm">Kotlin • React • Firestore • Figma</p>
+              </a>
+              <a href="https://github.com/MastracciN/mastraccin.github.io" target="_blank" rel="noopener noreferrer"
+                className="block group transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
+                <p className="text-lg mb-1 group-hover:underline group-hover:text-blue-500 transition-colors duration-300">Portfolio ↗</p>
+                <p className="text-gray-400 mb-1">This site.</p>
+                <p className="text-gray-500 mb-1 text-sm">React • Tailwind CSS</p>
               </a>
           </section>
 
