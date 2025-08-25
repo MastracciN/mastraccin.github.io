@@ -1,3 +1,3 @@
-# My Portfolio
+# Portfolio
 
-Built with React and Tailwind CSS
+Built with React, Vite, and Tailwind CSS.
