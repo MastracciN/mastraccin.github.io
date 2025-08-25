@@ -106,15 +106,25 @@ const Portfolio = () => {
               <a href="https://github.com/MastracciN/Clearer" target="_blank" rel="noopener noreferrer"
                 className="block group transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
                 <p className="text-lg mb-1 group-hover:underline group-hover:text-blue-500 transition-colors duration-300">Clearer ↗</p>
-                <p className="text-gray-400 mb-1">An assistive reading tool for children with Auditory Processing Disorder built in Android.</p>
-                <p className="text-gray-500 mb-1 text-sm">Kotlin • React • Firestore • Figma</p>
+                <p className="text-gray-400 mb-1">An assistive reading tool for children with Auditory Processing Disorder built in Android. Utilizes
+                  Optical Character Recognition (OCR) to 
+                </p>
+                <p className="text-gray-500 mb-1 text-sm">Kotlin • React • Firebase • JIRA</p>
+              </a>
+              <a href="https://github.com/MastracciN/Collectors" target="_blank" rel="noopener noreferrer"
+                className="block group transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
+                <p className="text-lg mb-1 group-hover:underline group-hover:text-blue-500 transition-colors duration-300">Collectors ↗</p>
+                <p className="text-gray-400 mb-1">A full-stack web app for managing Hot Wheels collections. Users can quickly add cars via UPC scanning, 
+                  browse and organize collections, with data stored in PostgreSQL through a RESTful API.</p>
+                <p className="text-gray-500 mb-1 text-sm">React • Vite • Tailwind CSS • Node.js • Express.js • PostgreSQL</p>
               </a>
               <a href="https://github.com/MastracciN/mastraccin.github.io" target="_blank" rel="noopener noreferrer"
                 className="block group transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
-                <p className="text-lg mb-1 group-hover:underline group-hover:text-blue-500 transition-colors duration-300">Portfolio ↗</p>
-                <p className="text-gray-400 mb-1">This site.</p>
-                <p className="text-gray-500 mb-1 text-sm">React • Tailwind CSS</p>
-              </a>
+                <p className="text-lg mb-1 group-hover:underline group-hover:text-blue-500 transition-colors duration-300">Portfolio Website ↗</p>
+                <p className="text-gray-400 mb-1">A website to showcase my projects and skills (this site).</p>
+                <p className="text-gray-500 mb-1 text-sm">React • Vite • Tailwind CSS • Github Pages</p>
+              </a>              
+
           </section>
 
           {/* Links Section */}
