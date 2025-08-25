@@ -47,15 +47,15 @@ const Portfolio = () => {
           {/* About Section */}
           <section id="about" className="mb-20">
             <h2 className="text-xl mb-5">About</h2>
-            <p className="text-gray-400">I enjoy building things that people actually <b>want</b> to use. 
-              Whether it's a big project or a small feature, there's something really satisfying about creating something useful.
-               I've had the opportunity to work on a variety of different projects—from <b>web</b> apps to <b>machine learning</b> projects—which 
-               has helped me pick up new skills quickly and stay curious.
-               <br/><br/>
-               When I'm not at my computer, I'm probably watching movies or walking my dog.
-               <br/><br/>
-               I’m always open to new opportunities. If you think I’d be a good fit, feel free to reach out.
-              </p>
+            <p className="text-gray-400">
+              I love building things that people actually <b>want</b> to use.  
+              From small features to full projects, I enjoy the challenge of turning ideas into something practical and impactful.  
+              My experience spans across <b>web development</b> and <b>machine learning</b>, and along the way I’ve learned to pick up new skills quickly and stay curious.  
+              <br/><br/>
+              Outside of coding, you’ll usually find me watching movies or out on a walk with my dog.  
+              <br/><br/>
+              I’m always excited to take on new challenges and opportunities—so if you think I’d be a good fit, feel free to get in touch.  
+            </p>
           </section>
 
           {/* Work Experience Section */}
