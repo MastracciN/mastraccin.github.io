@@ -50,7 +50,7 @@ const Portfolio = () => {
             <p className="text-gray-400">
               I love building things that people actually <b>want</b> to use.  
               From small features to full projects, I enjoy the challenge of turning ideas into something practical and impactful.  
-              My experience spans across <b>web development</b> and <b>machine learning</b>, and along the way I’ve learned to pick up new skills quickly and stay curious.  
+              My experience spans across <b>web development</b> and <b>AI</b>. These experiences taught me to pick up new skills quickly and stay curious.  
               <br/><br/>
               Outside of coding, you’ll usually find me watching movies or out on a walk with my dog.  
               <br/><br/>
@@ -66,8 +66,8 @@ const Portfolio = () => {
             <div className="transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
               <p className="text-gray-500 mb-1 text-sm">2023 — 2024</p>
               <p className="mb-1 text-lg">Research Assistant • Sheridan Centre for Applied AI</p>
-              <p className="text-gray-400 mb-1">Developed a machine learning model for the classification of heart sounds collected via electronic stethoscope.
-                Presented and published a paper on this research available here.
+              <p className="text-gray-400 mb-1">Developed a AI model for the classification of heart sounds collected via electronic stethoscope.
+                A paper was published on this research.
               </p>
               <p className="text-gray-500  text-sm">Python • TensorFlow • Pandas • NumPy</p>
             </div>
@@ -106,8 +106,8 @@ const Portfolio = () => {
               <a href="https://github.com/MastracciN/Clearer" target="_blank" rel="noopener noreferrer"
                 className="block group transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
                 <p className="text-lg mb-1 group-hover:underline group-hover:text-blue-500 transition-colors duration-300">Clearer ↗</p>
-                <p className="text-gray-400 mb-1">An assistive reading tool for children with Auditory Processing Disorder built in Android. Utilizes
-                  Optical Character Recognition (OCR) to 
+                <p className="text-gray-400 mb-1">An assistive reading tool for children with Auditory Processing Disorder built in Android. Provides
+                  features for reading assistance as well as comprehension testing.
                 </p>
                 <p className="text-gray-500 mb-1 text-sm">Kotlin • React • Firebase • JIRA</p>
               </a>
@@ -115,7 +115,7 @@ const Portfolio = () => {
                 className="block group transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
                 <p className="text-lg mb-1 group-hover:underline group-hover:text-blue-500 transition-colors duration-300">Collectors ↗</p>
                 <p className="text-gray-400 mb-1">A full-stack web app for managing Hot Wheels collections. Users can quickly add cars via UPC scanning, 
-                  browse and organize collections, with data stored in PostgreSQL through a RESTful API.</p>
+                  browse and organize collections, with data stored in PostgreSQL through a RESTful API built with Node.js.</p>
                 <p className="text-gray-500 mb-1 text-sm">React • Vite • Tailwind CSS • Node.js • Express.js • PostgreSQL</p>
               </a>
               <a href="https://github.com/MastracciN/mastraccin.github.io" target="_blank" rel="noopener noreferrer"
