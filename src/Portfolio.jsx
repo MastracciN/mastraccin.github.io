@@ -65,7 +65,7 @@ const Portfolio = () => {
             {/* <div className="transition-colors duration-300 hover:bg-gray-900 rounded-lg py-6"> */}
             <div className="transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
               <p className="text-gray-500 mb-1 text-sm">2023 — 2024</p>
-              <p className="mb-1 text-lg">Research Assistant • Sheridan Centre for Applied AI</p>
+              <p className="mb-1 text-lg">Research Assistant (AI/Machine Learning) • Sheridan Centre for Applied AI</p>
               <p className="text-gray-400 mb-1">Developed a AI model for the classification of heart sounds collected via electronic stethoscope.
                 A paper was published on this research.
               </p>
@@ -75,7 +75,7 @@ const Portfolio = () => {
             {/* Experience 2 */}
             <div className="transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
               <p className="text-gray-500 mb-1 text-sm">May — Aug 2022</p>
-              <p className="mb-1 text-lg">Research Assistant • Sheridan Centre for Applied AI</p>
+              <p className="mb-1 text-lg">Research Assistant (AI/Machine Learning) • Sheridan Centre for Applied AI</p>
               <p className="text-gray-400 mb-1">Researched state-of-the-art voice cloning solutions, emphasizing cross-lingual capabilities, AI model effectiveness,
                 and optimal dataset practices. Developed voice clones with Python and PyCaret, utilizing Wav2Lip to produce AI-generated lip-synced videos and explore
                 practical applications of voice cloning technology.
