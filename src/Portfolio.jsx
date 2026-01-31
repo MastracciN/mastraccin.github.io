@@ -7,7 +7,7 @@ import pic from './assets/profile.jpg'
 const Portfolio = () => {
 
   return (
-    <div className="text-white bg-linear-to-br from-black to-[#110d1f] min-h-screen">
+    <div className="text-white bg-linear-to-br from-black to-[#00081f] min-h-screen">
       {/* Navbar */}
       {/* <Header /> */}
       {/* <div className="relative lg:flex lg:w-5/7 mx-auto max-w-[1400px] px-6 md:px-10 gap-4"> */}
