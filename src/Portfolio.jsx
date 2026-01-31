@@ -63,14 +63,17 @@ const Portfolio = () => {
             <h2 className="text-xl mb-3">Experience</h2>
             {/* Experience 1 */}
             {/* <div className="transition-colors duration-300 hover:bg-gray-900 rounded-lg py-6"> */}
-            <div className="transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
-              <p className="text-gray-500 mb-1 text-sm">2023 — 2024</p>
-              <p className="mb-1 text-lg">Artificial Intelligence Research Assistant • Sheridan Centre for Applied AI</p>
-              <p className="text-gray-400 mb-1">Developed an AI model using Python and TensorFlow for the classification of heart sound audio captured through a 
-                electronic stethoscope. Published and presented a paper detailing our research efforts and development process.
-              </p>
-              <p className="text-gray-500  text-sm">Python • TensorFlow • Pandas • NumPy • Matplotlib</p>
-            </div>
+            <a href="https://ieeexplore.ieee.org/document/10731067" target="_blank" rel="noopener noreferrer"
+                className="block group transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
+                <p className="text-gray-500 mb-1 text-sm">2023 — 2024</p>
+                <p className="text-lg mb-1 group-hover:underline group-hover:text-blue-500 transition-colors duration-300">Artificial Intelligence Research Assistant • Sheridan Centre for Applied AI ↗</p>
+                <p className="text-gray-400 mb-1">Developed an AI model using Python and TensorFlow for the classification of heart sound audio captured through a 
+                  electronic stethoscope. Published and presented a paper detailing our research efforts and development process.
+                </p>
+                <p className="text-gray-500  text-sm">Python • TensorFlow • Pandas • NumPy • Matplotlib</p>
+              </a>
+
+            {/* */}
 
             {/* Experience 2 */}
             <div className="transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
