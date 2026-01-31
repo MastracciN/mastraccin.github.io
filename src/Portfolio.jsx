@@ -65,22 +65,22 @@ const Portfolio = () => {
             {/* <div className="transition-colors duration-300 hover:bg-gray-900 rounded-lg py-6"> */}
             <div className="transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
               <p className="text-gray-500 mb-1 text-sm">2023 — 2024</p>
-              <p className="mb-1 text-lg">Research Assistant (AI/Machine Learning) • Sheridan Centre for Applied AI</p>
-              <p className="text-gray-400 mb-1">Developed a AI model for the classification of heart sounds collected via electronic stethoscope.
-                A paper was published on this research.
+              <p className="mb-1 text-lg">Artificial Intelligence Research Assistant • Sheridan Centre for Applied AI</p>
+              <p className="text-gray-400 mb-1">Developed an AI model using Python and TensorFlow for the classification of heart sound audio captured through a 
+                electronic stethoscope. Published and presented a paper detailing our research efforts and development process.
               </p>
-              <p className="text-gray-500  text-sm">Python • TensorFlow • Pandas • NumPy</p>
+              <p className="text-gray-500  text-sm">Python • TensorFlow • Pandas • NumPy • Matplotlib</p>
             </div>
 
             {/* Experience 2 */}
             <div className="transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
               <p className="text-gray-500 mb-1 text-sm">May — Aug 2022</p>
-              <p className="mb-1 text-lg">Research Assistant (AI/Machine Learning) • Sheridan Centre for Applied AI</p>
+              <p className="mb-1 text-lg">Artificial Intelligence Research Assistant • Sheridan Centre for Applied AI</p>
               <p className="text-gray-400 mb-1">Researched state-of-the-art voice cloning solutions, emphasizing cross-lingual capabilities, AI model effectiveness,
                 and optimal dataset practices. Developed voice clones with Python and PyCaret, utilizing Wav2Lip to produce AI-generated lip-synced videos and explore
                 practical applications of voice cloning technology.
               </p>
-              <p className="text-gray-500 text-sm">Python • PyCaret • NumPy</p>
+              <p className="text-gray-500 text-sm">Python • PyCaret • Pandas • NumPy</p>
             </div>
 
             {/* Experience 3 */}
@@ -90,7 +90,7 @@ const Portfolio = () => {
               <p className="text-gray-400 mb-1">Developed the front end of a client-onboarding web application, creating extensive forms to manage client personal
                 and financial information.
               </p>
-              <p className="text-gray-500 text-sm">HTML • CSS • JavaScript • AngularJS</p>
+              <p className="text-gray-500 text-sm">HTML • CSS • JavaScript • Angular • TypeScript</p>
             </div>
 
             <div className="pt-6">
@@ -106,24 +106,25 @@ const Portfolio = () => {
               <a href="https://github.com/MastracciN/Clearer" target="_blank" rel="noopener noreferrer"
                 className="block group transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
                 <p className="text-lg mb-1 group-hover:underline group-hover:text-blue-500 transition-colors duration-300">Clearer ↗</p>
-                <p className="text-gray-400 mb-1">An assistive reading tool for children with Auditory Processing Disorder built in Android. Provides
-                  features for reading assistance as well as comprehension testing.
+                <p className="text-gray-400 mb-1">An assistive reading tool for children with Auditory Processing Disorder built with Kotlin and Firebase.
+                  Implemented OpenAI's API to create context readings used in the application.
                 </p>
-                <p className="text-gray-500 mb-1 text-sm">Kotlin • React • Firebase • JIRA</p>
+                <p className="text-gray-500 mb-1 text-sm">Kotlin • React • Firebase • JUnit • Google Cloud Platform</p>
               </a>
               <a href="https://github.com/MastracciN/Collectors" target="_blank" rel="noopener noreferrer"
                 className="block group transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
                 <p className="text-lg mb-1 group-hover:underline group-hover:text-blue-500 transition-colors duration-300">Collectors ↗</p>
-                <p className="text-gray-400 mb-1">A full stack web app for managing Hot Wheels collections. Users can quickly add cars via UPC scanning, 
-                  browse and organize collections, with data stored in PostgreSQL through a RESTful API built with Node.js.</p>
-                <p className="text-gray-500 mb-1 text-sm">React • Vite • Tailwind CSS • Node.js • Express.js • PostgreSQL</p>
+                <p className="text-gray-400 mb-1">A full stack web application using Node.js and React for managing Hot Wheels collections. User can scan barcodes
+                  and use data retrieved from UPCitemdb's API.
+                </p>
+                <p className="text-gray-500 mb-1 text-sm">JavaScript • Node.js • Express.js • React • Vite • Tailwind CSS • PostgreSQL • Postman</p>
               </a>
-              <a href="https://github.com/MastracciN/mastraccin.github.io" target="_blank" rel="noopener noreferrer"
+              {/* <a href="https://github.com/MastracciN/mastraccin.github.io" target="_blank" rel="noopener noreferrer"
                 className="block group transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
                 <p className="text-lg mb-1 group-hover:underline group-hover:text-blue-500 transition-colors duration-300">Portfolio Website ↗</p>
                 <p className="text-gray-400 mb-1">A website to showcase my projects and skills (this site).</p>
                 <p className="text-gray-500 mb-1 text-sm">React • Vite • Tailwind CSS • Github Pages</p>
-              </a>              
+              </a>               */}
 
           </section>
 
