@@ -79,9 +79,8 @@ const Portfolio = () => {
             <div className="transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
               <p className="text-gray-500 mb-1 text-sm">May — Aug 2022</p>
               <p className="mb-1 text-lg">Artificial Intelligence Research Assistant • Sheridan Centre for Applied AI</p>
-              <p className="text-gray-400 mb-1">Researched state-of-the-art voice cloning solutions, emphasizing cross-lingual capabilities, AI model effectiveness,
-                and optimal dataset practices. Developed voice clones with Python and PyCaret, utilizing Wav2Lip to produce AI-generated lip-synced videos and explore
-                practical applications of voice cloning technology.
+              <p className="text-gray-400 mb-1">Developed cross-lingual voice clone models with Python and sci-kit learn to produce AI-generated lip-synced 
+                videos.
               </p>
               <p className="text-gray-500 text-sm">Python • PyCaret • Pandas • NumPy</p>
             </div>
@@ -90,8 +89,8 @@ const Portfolio = () => {
             <div className="transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
               <p className="text-gray-500 mb-1 text-sm">2019 — 2020</p>
               <p className="mb-1 text-lg">Front End Developer • Claret Asset Management</p>
-              <p className="text-gray-400 mb-1">Developed the front end of a client-onboarding web application, creating extensive forms to manage client personal
-                and financial information.
+              <p className="text-gray-400 mb-1">Developed the front end of a web application in Angular serving data from a REST API. Created responsive
+                UI and implemented form validation and error handling.
               </p>
               <p className="text-gray-500 text-sm">HTML • CSS • JavaScript • Angular • TypeScript</p>
             </div>
