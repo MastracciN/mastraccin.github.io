@@ -21,7 +21,7 @@ const Portfolio = () => {
               transition-transform duration-300 hover:scale-103"/>
           <div>
             <h1 className="text-4xl mb-1">Nathaniel Mastracci</h1>
-            <p className="text-lg text-gray-400">Full-Stack Developer</p>
+            <p className="text-lg text-gray-400">Full Stack Developer</p>
             <Build />
           </div>
 
@@ -86,7 +86,7 @@ const Portfolio = () => {
             {/* Experience 3 */}
             <div className="transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
               <p className="text-gray-500 mb-1 text-sm">2019 — 2020</p>
-              <p className="mb-1 text-lg">Front-End Developer • Claret Asset Management</p>
+              <p className="mb-1 text-lg">Front End Developer • Claret Asset Management</p>
               <p className="text-gray-400 mb-1">Developed the front end of a client-onboarding web application, creating extensive forms to manage client personal
                 and financial information.
               </p>
@@ -114,7 +114,7 @@ const Portfolio = () => {
               <a href="https://github.com/MastracciN/Collectors" target="_blank" rel="noopener noreferrer"
                 className="block group transition-all duration-300 hover:bg-gray-900 rounded-lg py-6 -mx-6 px-6">
                 <p className="text-lg mb-1 group-hover:underline group-hover:text-blue-500 transition-colors duration-300">Collectors ↗</p>
-                <p className="text-gray-400 mb-1">A full-stack web app for managing Hot Wheels collections. Users can quickly add cars via UPC scanning, 
+                <p className="text-gray-400 mb-1">A full stack web app for managing Hot Wheels collections. Users can quickly add cars via UPC scanning, 
                   browse and organize collections, with data stored in PostgreSQL through a RESTful API built with Node.js.</p>
                 <p className="text-gray-500 mb-1 text-sm">React • Vite • Tailwind CSS • Node.js • Express.js • PostgreSQL</p>
               </a>
