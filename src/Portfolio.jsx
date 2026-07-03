@@ -96,7 +96,7 @@ const Portfolio = () => {
             </div>
 
             <div className="pt-6">
-              <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer"
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
                 className="hover:underline hover:text-blue-500 transition-colors duration-300">View Full Resume ↗</a>
             </div>
 
